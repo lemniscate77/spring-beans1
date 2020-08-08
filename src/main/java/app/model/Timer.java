@@ -1,6 +1,16 @@
 package app.model;
 
+import org.springframework.beans.TypeMismatchException;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Scope;
+import org.springframework.stereotype.Component;
+
+
+@Component
 public class Timer {
+@Autowired
+    public Timer () {}
 
     private Long nanoTime = System.nanoTime();
 
